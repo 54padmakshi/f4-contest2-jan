@@ -11,6 +11,7 @@ const increment =()=>{
   if (counter === 10){
     //display the button
       setCounter(0);
+      
   }
   } ;
    const decrement = ()=>{
@@ -35,7 +36,7 @@ useEffect(() => {
     <div id='msg'></div>
     <button onClick={decrement}>Decrement</button> &nbsp;&nbsp;
     <button onClick={increment}>Increment</button>&nbsp;&nbsp; 
-    <button id='btn' disabled ={setCounter(9)} onClick = {increment}>Go Back to 0</button>
+    <button id='btn' onClick = {increment}>Go Back to 0</button>
     </div>
   )
 }

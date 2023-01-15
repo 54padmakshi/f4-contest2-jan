@@ -15,10 +15,12 @@ const increment =()=>{
   }
   } ;
    const decrement = ()=>{
-    if (counter <11) {
+    if (counter <11 ) {
       setCounter(counter-1);
           }
-         
+       if (counter<1) 
+       { setCounter(0);
+        document.getElementById('msg').textContent = "Error : Counter cannot go below 0"}
    }
 
 useEffect(() => {
@@ -29,7 +31,7 @@ useEffect(() => {
 
 
   return (
-    <div>
+    <div className='comp'>
     <p> Counter using React</p>
     Your current count is : {counter}
     

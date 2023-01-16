@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react'
 
+
 function Component() {
   const [counter , setCounter] = useState(0);
   const [btndisabled , setBtnDisabled] = useState(true);
@@ -11,13 +12,11 @@ const increment =()=>{
   } 
   if(counter === 10){ 
     setBtnDisabled(false)
-   }
-   
+   }   
   } ;
-  
+ 
   const handlebutton = ()=>{
-    setCounter(0);
-  }
+    setCounter(0);}
    
   
    const decrement = ()=>{

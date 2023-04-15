@@ -9,9 +9,11 @@ const increment =()=>{
 
   if (counter < 10 ) {
     setCounter(counter+1);
+    document.getElementById('msg').textContent = ""
   } 
   if(counter === 10){ 
     setBtnDisabled(false)
+    document.getElementById('msg').textContent = ""
    }   
   } ;
  
@@ -22,6 +24,7 @@ const increment =()=>{
    const decrement = ()=>{
     if (counter <11 ) {
       setCounter(counter-1);
+      document.getElementById('msg').textContent = ""
           }
        if (counter<1) 
        { setCounter(0);

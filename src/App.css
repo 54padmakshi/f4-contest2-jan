@@ -1,14 +1,10 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: black;
-  color: white;
-   
+     
 }
 
-#msg{
-  color: red;
-}
+
 p{
   font-family: 'Inter';
 font-style: normal;
